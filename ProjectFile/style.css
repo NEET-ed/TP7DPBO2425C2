@@ -1,0 +1,397 @@
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Font diubah */
+    font-family: 'Poppins', sans-serif; /* Asumsikan Poppins diimpor, jika tidak, ganti ke Arial */
+    /* Background diubah */
+    background-color: #e9f7f7; /* Biru muda/Teal sangat terang */
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+    /* Dibuat rounded */
+    border-radius: 12px; 
+    /* Bayangan lebih halus */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+    overflow: hidden; /* Penting untuk radius batas pada konten anak */
+}
+
+/* Header */
+header {
+    /* Warna diubah (Teal/Biru Kesehatan) */
+    background-color: #2a7e7a; 
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    /* Border diubah */
+    border-bottom: 4px solid #00a878; 
+}
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.95;
+    font-weight: 400;
+}
+
+/* Navigation */
+nav {
+    /* Warna diubah */
+    background-color: #00a878; /* Hijau Teal */
+    padding: 0;
+    border-bottom: 2px solid #2a7e7a;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 18px 30px;
+    display: block;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border-right: 1px solid #2a7e7a;
+}
+
+nav a:hover {
+    /* Hover diubah */
+    background-color: #2a7e7a;
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    background-color: white;
+}
+
+/* Section Titles */
+h2, h3 {
+    /* Warna diubah */
+    color: #00a878;
+    margin-bottom: 25px;
+    font-weight: 600;
+    /* Border diubah */
+    border-bottom: 3px solid #e9f7f7; /* Garis tipis */
+    padding-bottom: 10px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Dibuat rounded */
+    overflow: hidden;
+}
+
+th {
+    /* Warna diubah */
+    background-color: #2a7e7a;
+    color: white;
+    padding: 18px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #00a878;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.2s ease;
+    vertical-align: middle;
+}
+
+tbody tr:nth-child(even) {
+    /* Warna diubah */
+    background-color: #f7fcfc;
+}
+
+tbody tr:hover {
+    /* Warna diubah */
+    background-color: #e9f7f7;
+}
+
+/* Forms */
+form {
+    background-color: #f8fcfc;
+    padding: 30px;
+    margin: 30px 0;
+    border: 1px solid #e9ecef;
+    border-radius: 8px; /* Dibuat rounded */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Dibuat rounded */
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    background-color: white;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    /* Warna fokus diubah */
+    border-color: #00a878;
+    box-shadow: 0 0 0 3px rgba(0, 168, 120, 0.15);
+}
+
+label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Buttons */
+button, .btn {
+    /* Warna diubah (Primer) */
+    background-color: #00a878; 
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px; /* Dibuat rounded */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover, .btn:hover {
+    /* Hover diubah */
+    background-color: #2a7e7a;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-danger {
+    background-color: #e74c3c; /* Merah bahaya/peringatan */
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-success {
+    background-color: #2ecc71; /* Hijau sukses */
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+}
+
+.btn-warning {
+    background-color: #f39c12; /* Kuning peringatan */
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background-color: #e67e22;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 30px;
+    margin: 30px 0;
+    border: 1px solid #eee;
+    border-radius: 8px; /* Dibuat rounded */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    /* Warna diubah */
+    color: #2a7e7a;
+    margin-bottom: 20px;
+    /* Border diubah */
+    border-bottom: 2px solid #e9f7f7; 
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Alerts */
+.alert {
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 6px; /* Dibuat rounded */
+    border-left: 4px solid;
+    font-weight: 500;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #2ecc71;
+    color: #1a5e3a;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #e74c3c;
+    color: #721c24;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    border-color: #3498db;
+    color: #0c5460;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border-color: #f39c12;
+    color: #856404;
+}
+
+/* Footer */
+footer {
+    /* Warna diubah */
+    background-color: #2a7e7a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-top: 4px solid #00a878;
+    margin-top: 0;
+}
+
+footer p {
+    margin: 5px 0;
+    opacity: 0.95;
+}
+
+/* Page Content Wrapper */
+.page-wrapper {
+    background-color: white;
+    border-top: 1px solid #ddd;
+}
+
+/* Action Buttons Container */
+.action-buttons {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #f8fcfc;
+    border-radius: 6px; /* Dibuat rounded */
+    text-align: center;
+    border: 1px dashed #e9f7f7;
+}
+
+/* Status Messages */
+.status-message {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 6px; /* Dibuat rounded */
+    text-align: center;
+    font-weight: 500;
+}
+
+.status-success {
+    background-color: #d4edda;
+    color: #1a5e3a;
+    border: 1px solid #2ecc71;
+}
+
+.status-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #e74c3c;
+}
+
+/* Table Actions */
+.table-actions {
+    white-space: nowrap;
+}
+
+.table-actions .btn {
+    margin: 2px;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        /* Hapus bayangan pada layar kecil untuk tampilan bersih */
+        box-shadow: none; 
+        border-radius: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav a {
+        border-right: none;
+        border-bottom: 1px solid #2a7e7a;
+        text-align: center;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 10px 8px;
+    }
+    
+    header h1 {
+        font-size: 2.2em;
+    }
+    
+    .action-buttons {
+        padding: 15px;
+    }
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+.p-20 { padding: 20px; }
+.border-none { border: none; }
+.full-width { width: 100%; }
